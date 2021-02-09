@@ -20,7 +20,7 @@ export default function NavBar() {
     <Navbar bg="light" variant="light" sticky="top" expand="lg">
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Brand href="#home" className="mr-auto ml-auto">
-        <img src={logoUrl} alt={brandName} />
+        <b>SkillNerve</b>
       </Navbar.Brand>
 
       <Navbar.Collapse id="basic-navbar-nav">
@@ -30,7 +30,7 @@ export default function NavBar() {
           ))}
         </Nav>
         <Form inline>
-          <FormControl type="text" placeholder="Search" className="ml-md-4" />
+          <FormControl type="text" placeholder="Search" className="mr-md-2" />
         </Form>
         <Button variant="secondary">Donate</Button>
         &ensp;
@@ -39,7 +39,9 @@ export default function NavBar() {
           <Button variant="secondary">Sign Up</Button>
         </ButtonGroup>
       </Navbar.Collapse>
-      <input type="text" className=" form-control d-lg-none" />
+      <Form.Group className="d-lg-none search-nav">
+        <Form.Control type="text" placeholder="Search" />
+      </Form.Group>
     </Navbar>
   );
 }
