@@ -10,17 +10,18 @@
 }
 .long-cards-parent {
   margin: 5vw;
-  border: 0px;
-  box-shadow: 5px 5px 15px -5px #ccc;
+  border: 0px !important;
+  /* box-shadow: 0px 0px 15px 5px #ccc; */
 }
 .long-card {
   display: flex;
   justify-content: space-around;
+  border-radius: 10px;
+}
+.long-card-normal {
   background: linear-gradient(90deg, #81ecec, #fff);
 }
 .long-card-inverted {
-  display: flex;
-  justify-content: space-around;
   flex-direction: row-reverse;
   background: linear-gradient(90deg, #fff, #81ecec);
 }

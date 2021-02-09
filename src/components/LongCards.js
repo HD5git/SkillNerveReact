@@ -26,7 +26,12 @@ export default function LongCards() {
         toLeft = !toLeft;
         return (
           <Card className="long-cards-parent">
-            <Row className={toLeft ? "long-card" : "long-card-inverted"}>
+            <Row
+              className={
+                "long-card " +
+                (toLeft ? "long-card-normal" : "long-card-inverted")
+              }
+            >
               <Col md="auto">
                 <Card.Body>
                   <Card.Title>{aCard.title}</Card.Title>
@@ -34,7 +39,7 @@ export default function LongCards() {
                 </Card.Body>
               </Col>
               <Col md="auto">
-                <Image src={aCard.imgUrl} />
+                <Image src={aCard.imgUrl} rounded />
               </Col>
             </Row>
           </Card>
